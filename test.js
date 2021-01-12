@@ -22,5 +22,7 @@ function merString(array1, array2) {
     returnString.push(x);
     console.log(returnString.join(""));
   }
+  console.log(returnString.join(""));
 }
 merString("123", "asdafdfs");
+merString("123456", "asd");
