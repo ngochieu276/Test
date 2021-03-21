@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBRbHBRCXMmbFrxG2MsI-1qxLGktwMODpQ",
+        authDomain: "test-a327c.firebaseapp.com",
+        databaseURL: "https://test-a327c-default-rtdb.firebaseio.com",
+        projectId: "test-a327c",
+        storageBucket: "test-a327c.appspot.com",
+        messagingSenderId: "287399023535",
+        appId: "1:287399023535:web:b341bde94f76802eeb955a",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <form>
+      <input class="form-name" type="text" placeholder="ten nguoi vay" />
+      <input class="form-money" type="number" placeholder="so tien vay" />
+      <input class="form-date" type="time" placeholder="han tra" />
+      <input class="form-purpose" type="text" placeholder="muc dich vay" />
+      <button type="submit">Xac nhan</button>
+    </form>
+    <div class="userInfor"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
